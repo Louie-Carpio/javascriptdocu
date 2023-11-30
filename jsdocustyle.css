@@ -9,9 +9,10 @@
   }
   
   #main-doc{
-    margin: 10px 20px 10px 250px;
-    border-left: 2px solid grey;
-    padding-left: 20px;
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom:110px;
   }
   
   #main-doc header{
@@ -21,10 +22,27 @@
   
   #navbar{
     position: fixed;
-    top: 50px;
-    width: 250px;
-    height: 500px;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+  }
+  #navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-x: hidden;
     overflow-y: auto;
+  }
+
+  .nav-ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
   }
   
   .nav-link{
@@ -53,18 +71,20 @@
   }
   
   .nav-bar-title{
-    position: fixed;
-    top: 0;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    width: 250px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    text-align: center;
     font-size: 1.5rem;
-    padding-left: 10px;
+    
   }
   
-  #nav-bar, .nav-bar-title{
-    display: block;
+  .nav-ul>li{
+    position:relative;
+    width: 100%;
+    border-top: 1px solid;
+    display: list-item;
+    text-align: -webkit-match-parent;
   }
   
   .indent{
