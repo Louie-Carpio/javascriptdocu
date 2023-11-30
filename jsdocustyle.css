@@ -1,6 +1,7 @@
 @media (max-width: 768px){
     #navbar{
       width: 100px;
+      height: 88%;
     }
   }
   body{
@@ -33,6 +34,7 @@
     padding: 0;
     overflow-x: hidden;
     overflow-y: auto;
+    list-style: none;
   }
 
   .nav-ul{
@@ -82,9 +84,12 @@
   .nav-ul>li{
     position:relative;
     width: 100%;
-    border-top: 1px solid;
     display: list-item;
     text-align: -webkit-match-parent;
+  }
+
+  .nav-ul>li:first-of-type{
+    border-top: 2px solid grey;
   }
   
   .indent{
@@ -106,6 +111,3 @@
     letter-spacing:1.5;
   }
   
-  li{
-    padding-bottom: 10px;
-  }
